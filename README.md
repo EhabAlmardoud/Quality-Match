@@ -10,6 +10,12 @@ How it works:
 -The app find the nearest weather station (from a list of station already retrieved from [dwd](http://ftp-cdc.dwd.de/) API) using coordination of both.  
 -The user click on nearest weather station and the app fetch the data for this station from the dwd API.  
 
+Tools used in the task:  
+Reactjs, Redux, Redux-thunk, Axios, lodash, jszip, plotly.js
+
+DevTools used:  
+webpack, babel
+
 To download and use, simply run the following commands on your machine:
 
 ```bash
