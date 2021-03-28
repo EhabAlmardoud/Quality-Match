@@ -54,9 +54,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        getHourlyData: (d) => dispatch(actionCreaters.updateHourlyData(d)),
-        toggleLoadingF: () => dispatch(actionCreaters.toggleLoading()),
-
+        getHourlyData: (d) => dispatch(actionCreaters.updateHourlyData(d))
     }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(LocationsHistory)
