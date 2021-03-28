@@ -56,7 +56,6 @@ export const updateHourlyData = (payload) => {
             }
         })
         const nearestStation = get(getState().mr.stations, nearestStationID, {})
-        console.log(nearestStation)
         // Fetch the list of the files and find the station file name using the station_id
         axios.get(dwdURL)
             .then(r => {
@@ -89,7 +88,6 @@ export const updateHourlyData = (payload) => {
 
 export const saveResult = (payload, actionTyp) => {
     const typ = get(actionsTypes, actionTyp, '')
-    console.log(typ,payload)
     return {
         type: typ,
         payload: payload
