@@ -12,4 +12,4 @@ npm install
 To start the project run:
 ```bash
 npm start
-``
+```
